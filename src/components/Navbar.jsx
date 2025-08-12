@@ -5,28 +5,28 @@ import { NavLink } from 'react-router';
 const Navbar = () => {
     const links = 
         <>
-            <li className='uppercase'><NavLink to='/' className={({ isActive }) => isActive ? 
-            'underline  text-primary underline-offset-4 font-bold' : ''}>Home</NavLink></li>
+            <li className='uppercase'><a href='#home' className={({ isActive }) => isActive ? 
+            'underline   underline-offset-4 font-semibold' : ''}>Home</a></li>
 
-            <li className='uppercase'><NavLink to='/about' className={({ isActive }) => isActive ? 
-            'underline text-blue-400 underline-offset-4 font-bold' : ''}>About Me</NavLink></li>
+            <li className='uppercase'><a href='#about' className={({ isActive }) => isActive ? 
+            'underline   underline-offset-4 font-semibold' : ''}>About</a></li>
     
-            <li className='uppercase'><NavLink to='/skills' className={({ isActive }) => isActive ? 
-            'underline  text-blue-400 underline-offset-4 font-bold' : ''}>Skills</NavLink></li>
+            <li className='uppercase'><a href='#skills' className={({ isActive }) => isActive ? 
+            'underline   underline-offset-4 font-semibold' : ''}>Skills</a></li>
 
-            <li className='uppercase'><NavLink to='/education' className={({ isActive }) => isActive ? 
-            'underline  text-blue-400 underline-offset-4 font-bold' : ''}>Education</NavLink></li>
+            <li className='uppercase'><a href='#education' className={({ isActive }) => isActive ? 
+            'underline   underline-offset-4 font-semibold' : ''}>Education</a></li>
 
-            <li className='uppercase'><NavLink to='/projects' className={({ isActive }) => isActive ? 
-            'underline  text-blue-400 underline-offset-4 font-bold' : ''}>Projects</NavLink></li>
+            <li className='uppercase'><a href='#projects' className={({ isActive }) => isActive ? 
+            'underline   underline-offset-4 font-semibold' : ''}>Projects</a></li>
 
-            <li className='uppercase'><NavLink to='/contact' className={({ isActive }) => isActive ? 
-            'underline  text-blue-400 underline-offset-4 font-bold' : ''}>Contact</NavLink></li>
+            <li className='uppercase'><a href='#contact' className={({ isActive }) => isActive ? 
+            'underline   underline-offset-4 font-semibold' : ''}>Contact</a></li>
 
         </>
 
     return (
-        <div className="navbar fixed top-0 left-0 w-full bg-base shadow-md z-50 md:px-16">
+        <div className="navbar fixed top-0 left-0 w-full bg-base-100 shadow-md z-50 md:px-16">
             {/* LEFT - Logo */}
             <div className="navbar-start">
                 <div className="dropdown">
