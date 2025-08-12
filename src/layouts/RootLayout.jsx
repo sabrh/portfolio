@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router';
 import Navbar from '../components/Navbar';
+import Contact from '../components/Contact';
 
 const RootLayout = () => {
     return (
@@ -8,7 +9,9 @@ const RootLayout = () => {
         <header>
             <Navbar/>
         </header>
-        <Outlet></Outlet>
+        <main className='px-8 md:px-12 bg-[#111b29]'>
+            <Outlet></Outlet>
+        </main>
         </>
     );
 };

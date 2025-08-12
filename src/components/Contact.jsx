@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { SiGmail } from "react-icons/si";
 
 export default function Contact() {
   const [formData, setFormData] = useState({ subject: "", message: "" });
@@ -44,15 +45,15 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-base-100" data-aos="fade-up">
+    <section id="contact" className="py-20" data-aos="fade-up">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6 text-primary">Contact Me</h2>
-        <p className="mb-6 font-semibold">
-          Email: <a href="mailto:sabrina.haque442@gmail.com" className="text-secondary underline">sabrina.haque442@gmail.com</a>
+        <p className="mb-6 font-semibold text-[#739cc1] flex items-center justify-center text-center">
+          <SiGmail /> <a href="mailto:sabrina.haque442@gmail.com" className="text-[#739cc1] underline"> : sabrina.haque442@gmail.com</a>
         </p>
 
-        <form onSubmit={handleSubmit} className="max-w-md mx-auto flex flex-col gap-6 text-left">
-          <label className="font-semibold" htmlFor="subject">Subject *</label>
+        <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-[#233d50] flex flex-col gap-6 p-10 rounded-lg text-left">
+          <label className="font-semibold text-[#739cc1]" htmlFor="subject">Subject *</label>
           <input
             type="text"
             id="subject"
@@ -64,7 +65,7 @@ export default function Contact() {
             required
           />
 
-          <label className="font-semibold" htmlFor="message">Message *</label>
+          <label className="font-semibold text-[#739cc1]" htmlFor="message">Message *</label>
           <textarea
             id="message"
             name="message"

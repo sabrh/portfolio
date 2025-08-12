@@ -56,7 +56,7 @@ const Navbar = () => {
 
         {/* RIGHT - Auth Buttons / User Dropdown */}
         <div className="navbar-end gap-4">
-            <button className='btn btn-ghost'>Resume</button>
+            <a href='https://drive.google.com/file/d/1pytDvRLJGA37Q5CpsjY3FjbYzO2vGxLy/view?usp=sharing' target='_blank' className='btn btn-ghost'>Resume</a>
         </div>
         </div>
 
