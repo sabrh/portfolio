@@ -19,7 +19,7 @@ const Skills = () => {
 
     return (
         <section id="skills" className="" data-aos="fade-up">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6 text-primary">Skills</h2>
             <div>
                 <p className='text-[#739cc1]'>Skilled in full-stack web development using JavaScript (ES6+), React.js,
